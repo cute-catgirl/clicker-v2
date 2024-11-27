@@ -1,0 +1,83 @@
+{
+    "click_upgrade": {
+        "name": "Clickier Clicks",
+        "description": "Increase click power by 1.",
+        "cost": {
+            "base": 50,
+            "scaling": {
+                "type": "exponential",
+                "factor": 2
+            }
+        },
+        "limit": 5,
+        "effect": {
+            "type": "increment",
+            "target": "clickPowerBase",
+            "value": 1
+        },
+        "unlockCondition": {
+            "score": 25
+        }
+    },
+    "autoclicker": {
+        "name": "Autoclicker",
+        "description": "Adds 1 to autoclick power.",
+        "cost": {
+            "base": 200,
+            "scaling": {
+                "type": "linear",
+                "factor": 200
+            }
+        },
+        "limit": 5,
+        "effect": {
+            "type": "increment",
+            "target": "autoclickPower",
+            "value": 1
+        },
+        "unlockCondition": {
+            "score": 150
+        }
+    },
+    "click_multi_upgrade": {
+        "name": "Clickiest Clicks",
+        "description": "Increase click multiplier by 1",
+        "cost": {
+            "base": 500,
+            "scaling": {
+                "type": "exponential",
+                "factor": 10
+            }
+        },
+        "limit": 3,
+        "effect": {
+            "type": "increment",
+            "target": "clickPowerMult",
+            "value": 1
+        },
+        "unlockCondition": {
+            "score": 400
+        }
+    },
+    "limit_break": {
+        "name": "Limit Break",
+        "description": "Increases the limit of the first 2 upgrades by 1",
+        "cost": {
+            "base": 1000,
+            "scaling": {
+                "type": "exponential",
+                "factor": "5"
+            }
+        },
+        "limit": 3,
+        "effect": {
+
+        },
+        "unlockCondition": {
+            "upgrades": {
+                "click_upgrade": 5,
+                "autoclicker": 5
+            }
+        }
+    }
+}

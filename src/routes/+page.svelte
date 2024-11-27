@@ -3,7 +3,7 @@
 	import UpgradeButton from '$lib/components/UpgradeButton.svelte';
 
 	let game = $state({
-		score: 9999,
+		score: 0,
 		scoreTotal: 0,
 		upgradesOwned: {}
 	});

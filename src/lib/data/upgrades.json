@@ -1,7 +1,7 @@
 {
     "click_upgrade": {
         "name": "Clickier Clicks",
-        "description": "Increase click power by 1.",
+        "description": "Increases base click power by 1",
         "cost": {
             "base": 50,
             "scaling": {
@@ -21,7 +21,7 @@
     },
     "autoclicker": {
         "name": "Autoclicker",
-        "description": "Adds 1 to autoclick power.",
+        "description": "Increases base CPS by 1",
         "cost": {
             "base": 200,
             "scaling": {
@@ -41,7 +41,7 @@
     },
     "click_multi_upgrade": {
         "name": "Clickiest Clicks",
-        "description": "Increase click multiplier by 1",
+        "description": "Increases click multiplier by 1",
         "cost": {
             "base": 500,
             "scaling": {
